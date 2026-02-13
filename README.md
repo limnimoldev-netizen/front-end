@@ -141,3 +141,12 @@ nuxt.config.ts
 
 package.json  
 - Project dependencies
+
+
+
+
+This project is a web-based Human Resource management platform developed for PeopleCore Solutions (USA).
+It allows job seekers to explore job openings, submit their CV links or files, and for companies to manage recruitment tasks easily through an online system.
+
+The system connects Nuxt.js (frontend) with a Strapi (headless CMS) backend, using MySQL as the main database.
+It was built by a team of four developers under the guidance of Mr. Howdy Arnold, General Manager at PeopleCore Solutions.

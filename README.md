@@ -96,101 +96,48 @@ Follow these steps to set up the peoject :
 
 
 
-##   Frontend
+## Frontend Structure
 
-The frontend is built using **Nuxt 3** and follows a modular structure for better scalability and maintenance.
-
-```bash
 frontend/
 
-│
-├── assets/          # Images, fonts, and global styles
-├── components/      # Reusable Vue components
-├── composables/     # Reusable logic (Vue composables)
-├── layouts/         # Page layouts
-├── middleware/      # Route middleware
-├── pages/           # Application routes (file-based routing)
-├── plugins/         # Nuxt plugins
-├── public/          # Static files
-├── server/          # Server-side API (Nitro)
-├── stores/          # Pinia state management
-├── utils/           # Helper functions
-│
-├── app.vue          # Main application component
-├── nuxt.config.ts   # Nuxt configuration
-└── package.json     # Project dependencies
+assets/  
+- Images, fonts, and global styles
 
+components/  
+- Reusable Vue components
 
+composables/  
+- Reusable logic (Vue composables)
 
+layouts/  
+- Page layouts
 
+middleware/  
+- Route middleware
 
-Here the most you should do
+pages/  
+- Application routes (file-based routing)
 
+plugins/  
+- Nuxt plugins
 
+public/  
+- Static files
 
-```bash
-assets/
-│
-├── css/            # Global stylesheets
-│   └── main.css
-│
-├── images/         # Project images
-│   ├── logo.png
-│   └── banner.jpg
-│
-├── fonts/          # Custom fonts
-│   └── roboto.ttf
-│
-└── scss/           # SCSS/SASS files (optional)
-    └── variables.scss
+server/  
+- Server-side API (Nitro)
 
+stores/  
+- Pinia state management
 
-```bash
-components/
-│
-├── common/          # Shared UI components
-│   ├── Button.vue
-│   ├── Input.vue
-│   └── Modal.vue
-│
-├── layout/          # Layout-related components
-│   ├── Navbar.vue
-│   ├── Sidebar.vue
-│   └── Footer.vue
-│
-├── auth/            # Authentication components
-│   ├── LoginForm.vue
-│   └── RegisterForm.vue
-│
-└── dashboard/       # Dashboard widgets
-    ├── StatsCard.vue
-    └── ChartBox.vue
+utils/  
+- Helper functions
 
+app.vue  
+- Main application component
 
-```bash
-pages/
-│
-├── index.vue          # Home page (/)
-├── login.vue          # Login page (/login)
-├── register.vue       # Register page (/register)
-├── about.vue          # About page (/about)
-│
-├── dashboard/
-│   ├── index.vue      # Dashboard (/dashboard)
-│   ├── profile.vue    # Profile (/dashboard/profile)
-│   └── settings.vue   # Dashboard Settings
-│
-└── posts/
-    ├── index.vue      # Posts list (/posts)
-    └── [id].vue       # Post detail (/posts/:id)
+nuxt.config.ts  
+- Nuxt configuration
 
-    
-# 🌐 PeopleCore
-
-> 👨‍💻 Full Stack Developer  
-> Building People-Centered Digital Solutions
-
-# 🌟 PeopleCore
-
-> Full Stack Developer | Web Engineer  
-> Nuxt • Laravel • API • Database
+package.json  
+- Project dependencies

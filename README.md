@@ -73,3 +73,25 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+
+# FoxTech Dev 
+
+## Requirements
+
+Ensure you have the follwing software versions installed on system:
+
+-   **PHP**: 8.3
+-   **Composer**: 2.7.7 
+-   **Node.js**: 22.x
+-   **Laravel**:11.x
+-   **Tailwind**: 3.x
+
+...
+
+## Installation Instructions
+
+Follow these steps to set up the peoject :
+
+

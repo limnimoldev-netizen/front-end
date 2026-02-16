@@ -1,6 +1,7 @@
 <template>
-  <div class="p-8">
-    <h1 class="text-3xl font-bold">Home Page</h1>
-    <p>Welcome to my Nuxt site!</p>
+  <div>
+    <div class="flex items-center justify-center h-screen">
+      <h1 class="text-4xl font-bold">Welcome to the Home Page</h1>
+    </div>
   </div>
 </template>

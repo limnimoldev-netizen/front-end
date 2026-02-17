@@ -9,4 +9,7 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  fontFamily: {
+        sans: ['"Public Sans"', 'sans-serif'],
+      },
 });

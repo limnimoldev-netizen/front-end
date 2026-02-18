@@ -121,6 +121,7 @@
 </section>
 
 
+
 <section class="py-20 px-6 bg-blue-50">
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">How It Works</h2>

@@ -1,5 +1,6 @@
 
 <template>
+
   <div class="p-6">
    
         <div class="relative w-full min-h-[500px] bg-pink-100 rounded-[3rem] overflow-hidden flex flex-col items-center justify-center text-center p-10">
@@ -461,5 +462,6 @@
 
    
     </div>
+
 
 </template>

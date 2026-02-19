@@ -12,10 +12,10 @@
                         
             </div>
 
-            <h3 class="text-xl font-bold mb-1 group-hover:text-[#1440b8]">UI/UX Designer</h3>
+            <h3 class="text-xl font-bold mb-1 group-hover:text-[#1440b8]">Product Designer</h3>
             <p class="text-gray-400 text-sm mb-6 flex items-center gap-2">
-                    <Icon name="fa6-solid:location-dot" /> Pnhom Penh
-                <span class="text-[#1440b8] font-bold">$2k - $3k</span>
+                    <Icon name="fa6-solid:location-dot" /> Pnhom Penh, Cambodia
+                <span class="text-[#1440b8] font-bold">$400/monthly</span>
             </p>
 
             <div class="flex gap-3 mb-8">

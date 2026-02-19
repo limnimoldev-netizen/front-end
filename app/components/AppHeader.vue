@@ -18,7 +18,7 @@
                   Home
                   <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#" class="relative text-xl group">
+                <a href="/list-job" class="relative text-xl group">
                   List Jobs
                   <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
                 </a>
@@ -30,7 +30,7 @@
                   Recommended Jobs
                   <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#" class="relative text-xl group">
+                <a href="/company" class="relative text-xl group">
                   All Companies
                   <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
                 </a>

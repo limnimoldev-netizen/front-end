@@ -1,4 +1,4 @@
-
+<template>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <div class="min-h-screen flex font-['Plus_Jakarta_Sans',sans-serif] selection:bg-indigo-500/30">
 

@@ -1,13 +1,12 @@
 
 <template>
 
-  <div class="p-6">
    
-        <div class="relative w-full min-h-[500px] bg-pink-100 rounded-[3rem] overflow-hidden flex flex-col items-center justify-center text-center p-10">
+        <div class="relative w-full min-h-[500px]  overflow-hidden  items-center justify-center text-center ">
   
             <div class="absolute inset-0">
                
-                <img src="../assets/our-hr.png" alt="Hero Background" class="w-full h-full object-cover" />
+                <img src="../assets/our-hr.png" alt="Hero Background" class=" object-cover" />
                 <div class="absolute inset-0 bg-white/30"></div>
             </div>
 
@@ -59,60 +58,63 @@
             </div>
 
         </div>
-
+        <br>
         <section class="max-w-6xl mx-auto p-6">
-            
-            <div class="flex justify-between items-end mb-8">
-
-                <div>
-                    <h1 class="text-2xl font-bold">Popular category</h1>
-                </div>
-                <a href="#" class="text-[#1440b8] font-bold text-sm">View all</a>
+                
+            <div class="text-center mb-10">
+                
+                <h2 class="text-3xl font-black text-[#1440b8]">Recommended jobs</h2>
+                <p class="text-gray-400 mt-2">Trusted by thousands of job seekers worldwide.</p>
                 
             </div>
+            
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                     
                     <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                        <i class="fas fa-file-code "></i>
+
+                        <Icon name="mdi:code" class=" text-blue-500 text-3xl" />
                     </div>
 
                     <h3 class="font-bold text-lg">Development</h3>
-                    <p class="text-gray-400 text-xs">16 jobs</p>
+                    <p class="text-gray-600 text-sm">16 jobs</p>
 
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                    
                      <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                        <i class="fas fa-file-code "></i>
+
+                        <Icon name="mdi:dollar" class=" text-blue-500 text-3xl" />
                     </div>
 
                     <h3 class="font-bold text-lg">Marketing</h3>
-                    <p class="text-gray-400 text-xs">8 jobs</p>
+                    <p class="text-gray-600 text-sm">8 jobs</p>
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                     
                      <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                        <i class="fas fa-file-code "></i>
+                        <Icon name="mdi:dollar" class=" text-blue-500 text-3xl" />
                     </div>
 
                     <h3 class="font-bold text-lg">Design</h3>
-                    <p class="text-gray-400 text-xs">13 jobs</p>
+                    <p class="text-gray-600 text-sm">13 jobs</p>
 
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                     
                      <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                        <i class="fas fa-file-code "></i>
+                       
+                        <Icon name="mdi:dollar" class=" text-blue-500 text-3xl" />
+
                     </div>
 
                     <h3 class="font-bold text-lg">Service</h3>
-                    <p class="text-gray-400 text-xs">8 jobs</p>
+                    <p class="text-gray-600 text-sm">8 jobs</p>
 
                 </div>
 
@@ -123,14 +125,13 @@
 
         <section class="max-w-6xl mx-auto p-4">
             
-            <div class="flex justify-between items-center mb-6">
-
-                <h2 class="text-2xl font-bold">Recommended jobs</h2>
-
-                
-                <a href="#">  <span class="text-[#1440b8] font-bold text-sm">View all</span>  </a>
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-black text-[#1440b8]">Recommended jobs</h2>
+                <p class="text-gray-400 mt-2">Trusted by thousands of job seekers worldwide.</p>
             </div>
+            
 
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
                 <div class="bg-white p-3 rounded-3xl border border-gray-100 shadow-sm">
@@ -160,13 +161,14 @@
 
                     <div class="flex justify-between items-center p-4">
                         <p class="font-bold text-sm">$120/hr</p>
-                        <button class="bg-[#1440b8] text-white px-4 py-2 rounded-xl text-xs">Details</button>
+                        
+                        <button class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-[#7087bb]">Details</button>
                     </div>
 
                 </div>
 
                 <div class="bg-white p-3 rounded-3xl border border-gray-100 shadow-sm">
-                        <div class="bg-rose-100 p-6 rounded-2xl">
+                        <div class="bg-blue-100 p-6 rounded-2xl">
                             <div class="flex justify-between mb-4">
                                 <span class="bg-white px-2 py-1 rounded-lg text-[10px]">15 Feb 2024</span>
 
@@ -194,14 +196,15 @@
                         <div class="flex justify-between items-center p-4">
                             <p class="font-bold text-sm">$300/hr</p>
                             
-                            <button class="bg-[#1440b8] text-white px-4 py-2 rounded-xl text-xs">Details</button>
+                            <button class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-[#7087bb]">Details</button>
+
 
                         </div>
                 </div>
 
                 <div class="bg-white p-3 rounded-3xl border border-gray-100 shadow-sm">
                 
-                    <div class="bg-emerald-100 p-6 rounded-2xl">
+                    <div class="bg-blue-100 p-6 rounded-2xl">
                    
                         <div class="flex justify-between mb-4">
 
@@ -228,7 +231,8 @@
 
                     <div class="flex justify-between items-center p-4">
                         <p class="font-bold text-sm">$140/hr</p>
-                        <button class="bg-[#1440b8] text-white px-4 py-2 rounded-xl text-xs">Details</button>
+                        
+                        <button class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-[#7087bb]">Details</button>
                     </div>
 
                 </div>
@@ -244,12 +248,15 @@
         
         <section class="max-w-6xl mx-auto p-6 my-10">
 
-            <h2 class="text-2xl font-bold mb-8 text-[#1440b8]">See How It Works</h2>
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-black text-[#1440b8]">She How It Works</h2>
+                <p class="text-gray-400 mt-2">Trusted by thousands of job seekers worldwide.</p>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                <div class="bg-pink-50 p-8 rounded-xl border border-pink-100 relative">
-                    <span class="text-pink-400 text-xs font-bold uppercase">Step 01</span>
+                <div class="bg-blue-50 p-8 rounded-xl  relative">
+                    <span class="text-[#1440b8] text-xs font-bold uppercase">Step 01</span>
                     
                     <h3 class="text-lg font-bold mt-2 mb-3">Register An Account</h3>
                     <p class="text-gray-500 text-sm leading-relaxed">
@@ -258,8 +265,8 @@
 
                 </div>
 
-                <div class="bg-pink-50 p-8 rounded-xl border border-pink-100">
-                    <span class="text-pink-400 text-xs font-bold uppercase">Step 02</span>
+                <div class="bg-blue-50 p-8 rounded-xl ">
+                    <span class="text-[#1440b8] text-xs font-bold uppercase">Step 02</span>
                     
                     <h3 class="text-lg font-bold mt-2 mb-3">Search Your Job</h3>
                     <p class="text-gray-500 text-sm leading-relaxed">
@@ -268,8 +275,8 @@
 
                 </div>
 
-                <div class="bg-pink-50 p-8 rounded-xl border border-pink-100">
-                    <span class="text-pink-400 text-xs font-bold uppercase">Step 03</span>
+                <div class="bg-blue-50 p-8 rounded-xl ">
+                    <span class="text-[#1440b8] text-xs font-bold uppercase">Step 03</span>
                     
                     <h3 class="text-lg font-bold mt-2 mb-3">Apply For Job</h3>
                     <p class="text-gray-500 text-sm leading-relaxed">
@@ -296,32 +303,47 @@
                 <div class="bg-blue-50 p-8 rounded-[2rem] border border-blue-100">
                 
                     <div class="flex items-center gap-4 mb-4">
-                    
-                       <i class="fas fa-user-alt"></i>
+                
                         <div>
 
+                            <div class="w-[50px] bg-blue-50 border rounded-xl">
+                                <img src="../assets/pf1.png" alt="">
+
+                            </div>
+
                             <h4 class="font-bold">Alex Johnson</h4>
-                            <p class="text-xs text-blue-600">Product Designer</p>
+                            <p class="text-xs text-green-600">Product Designer</p>
                         </div>
                     </div>
 
-                    <p class="text-gray-600 italic text-sm leading-relaxed">
+                    <p class="text-gray-600 text-sm leading-relaxed">
                         "HireMe made my job search so easy. I found a position at Gojek within a week of signing up! The interface is very friendly."
                     </p>
                     
                      <div class="mt-4 text-yellow-500 text-xs">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
                     </div>
                 </div>
 
-                <div class="bg-green-50 p-8 rounded-[2rem] border border-green-100">
+                <div class="bg-blue-50 p-8 rounded-[2rem] border border-green-100">
                     <div class="flex items-center gap-4 mb-4">
                         
-                        <i class="fas fa-user-alt"></i>
+
+
+                        <div class="w-[50px] bg-blue-50 border rounded-xl">
+                               
+                            <img src="../assets/pf1.png" alt="">
+
+                        </div>
                        
                         <div>
                             <h4 class="font-bold">Sarah Williams</h4>
@@ -330,16 +352,20 @@
 
                     </div>
                     
-                    <p class="text-gray-600 italic text-sm leading-relaxed">
+                    <p class="text-gray-600 text-sm leading-relaxed">
                         "I love the Recommended Jobs feature. It actually understands my skills and suggests things I'm interested in."
                     </p>
 
                     <div class="mt-4 text-yellow-500 text-xs">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+
+                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
                     </div>
 
                 </div>
@@ -352,13 +378,15 @@
         <section class="max-w-6xl mx-auto px-6 py-20">
            
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-black mt-2">Find Expert Tips and Growth <br> Insights on Our Blog</h2>
+                <h2 class="text-4xl font-black mt-2">Find Expert Tips and Growth <br>
+                     <span class="text-[#1440b8]">Insights on Our Blog</span>
+                </h2>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
                 
                 <div>
-                    <div class="bg-gray-200 rounded-[2rem] aspect-video mb-6 overflow-hidden">
+                    <div class=" rounded-[30px]  mb-6 overflow-hidden">
                         <img src="../assets/hr-blog2.png" alt="Blog" class="w-full h-full object-cover">
                     </div>
 
@@ -380,12 +408,7 @@
                         </div>
 
                         <div>
-                            <h4 class="font-black text-lg leading-tight mb-2">Video Interview Tips: Before, During, and After</h4>
-                            
-                            <div class="text-gray-400 text-xs flex gap-4">
-                                <span>2 min read</span>
-                                <span>28 June 2024</span>
-                            </div>
+                            <h4 class="font-black text-lg leading-tight mb-2">Video Interview Tips: Before, During, <br>and After</h4>
                             
                         </div>
                     </div>
@@ -396,10 +419,7 @@
                         </div>
                         <div>
                         <h4 class="font-black text-lg leading-tight mb-2">Maximizing Your Job Search Potential with AI Tools</h4>
-                        <div class="text-gray-400 text-xs flex gap-4">
-                            <span>5 min read</span>
-                            <span>17 June 2024</span>
-                        </div>
+                        
                         </div>
                     </div>
 
@@ -410,13 +430,9 @@
                         </div>
                         
                         <div>
-                            <h4 class="font-black text-lg leading-tight mb-2">Top 5 LinkedIn Tips for Job Seekers</h4>
+                            <h4 class="font-black text-lg leading-tight mb-2">Top 5 LinkedIn Tips for Job <br> Seekers</h4>
                             
-                            <div class="text-gray-400 text-xs flex gap-4">
-
-                                <span>6 min read</span>
-                                <span>9 June 2024</span>
-                            </div>
+                        
                         </div>
                     </div>
 
@@ -428,7 +444,8 @@
 
 
         <section class="max-w-6xl mx-auto px-6 pb-20">
-            <div class="relative w-full bg-blue-50 rounded-[3rem] p-12 md:p-20 overflow-hidden border border-blue-100">
+
+            <div class="relative w-full bg-blue-50 rounded-[40px] p-12  overflow-hidden border border-blue-100">
                 
                 <div class="absolute -right-20 -top-20 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-50"></div>
 
@@ -438,7 +455,7 @@
                     </h2>
 
                     <p class="text-blue-700/70 mb-10 font-medium">
-                        Stop searching, start discovering. Let the ideal job come to you.
+                        Stop searching, start discovering. Let the ideal job <br> come to you.
                     </p>
 
                     <div class="bg-white p-1.5 rounded-full flex items-center shadow-md max-w-sm border border-blue-100">
@@ -452,8 +469,8 @@
                     </div>
                 </div>
 
-                <div class="absolute right-20 bottom-10 hidden lg:block opacity-20">
-                    <Icon name="fa6-solid:paper-plane" class="text-9xl text-blue-600 -rotate-12" />
+                <div class="absolute right-0 bottom-0   ">
+                    <img src="../assets/hrsub.png" alt="">
                 </div>
 
             </div>
@@ -461,7 +478,6 @@
         </section>
 
    
-    </div>
 
 
 </template>

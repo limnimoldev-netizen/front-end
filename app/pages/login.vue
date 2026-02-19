@@ -61,7 +61,7 @@
         <div class="mt-12 pt-8 border-t border-slate-100 text-center">
           <p class="text-slate-400 text-xs font-medium">
             New to the network? 
-            <router-link to="/sign" class="text-indigo-600 hover:text-indigo-700 font-bold transition-colors ml-1">Create account</router-link>
+            <router-link to="/sign-up" class="text-indigo-600 hover:text-indigo-700 font-bold transition-colors ml-1">Create account</router-link>
           </p>
         </div>
       </div>

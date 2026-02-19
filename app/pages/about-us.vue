@@ -5,8 +5,8 @@
      
 
       <section class="py-16 px-5 text-center">
-          <h2 class="text-5xl font-extrabold mb-4">Building Solutions</h2>
-          <p class="text-xl text-gray-600">Innovative ideas for a better tomorrow.</p>
+          <h2 class="text-5xl font-extrabold  bg-[#1440b8] text-white p-4 ">Building Solutions</h2>
+          <p class="text-xl text-white bg-black">Innovative ideas for a better tomorrow.</p>
     </section>
 
 
@@ -123,34 +123,34 @@
 
 
 <section class="py-20 px-6 bg-blue-50">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">How It Works</h2>
+      <div class="container mx-auto">
+             <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">How It Works</h2>
     <div class="grid md:grid-cols-4 gap-6 text-center">
-      <div class="p-4">
-        <div class="text-2xl font-bold text-blue-600 mb-2">01</div>
-        <h4 class="font-bold mb-2">Create Profile</h4>
-        <p class="text-sm text-gray-500">Candidates upload CVs and showcase their best skills.</p>
-      </div>
-      <div class="p-4">
-        <div class="text-2xl font-bold text-blue-600 mb-2">02</div>
-        <h4 class="font-bold mb-2">Smart Matching</h4>
-        <p class="text-sm text-gray-500">Our system connects you with roles that actually fit.</p>
-      </div>
-      <div class="p-4">
-        <div class="text-2xl font-bold text-blue-600 mb-2">03</div>
-        <h4 class="font-bold mb-2">Direct Interview</h4>
-        <p class="text-sm text-gray-500">Schedule and meet through our integrated platform.</p>
-      </div>
-      <div class="p-4">
-        <div class="text-2xl font-bold text-blue-600 mb-2">04</div>
-        <h4 class="font-bold mb-2">Get Hired</h4>
-        <p class="text-sm text-gray-500">Seamless onboarding into your new dream career.</p>
-      </div>
+          <div class="p-4">
+             <div class="text-2xl font-bold text-blue-600 mb-2">01</div>
+             <h4 class="font-bold mb-2">Create Profile</h4>
+             <p class="text-sm text-gray-500">Candidates upload CVs and showcase their best skills.</p>
+          </div>
+           <div class="p-4">
+                 <div class="text-2xl font-bold text-blue-600 mb-2">02</div>
+                 <h4 class="font-bold mb-2">Smart Matching</h4>
+                 <p class="text-sm text-gray-500">Our system connects you with roles that actually fit.</p>
+          </div>
+           <div class="p-4">
+                 <div class="text-2xl font-bold text-blue-600 mb-2">03</div>
+                 <h4 class="font-bold mb-2">Direct Interview</h4>
+                 <p class="text-sm text-gray-500">Schedule and meet through our integrated platform.</p>
+          </div>
+           <div class="p-4">
+                 <div class="text-2xl font-bold text-blue-600 mb-2">04</div>
+                  <h4 class="font-bold mb-2">Get Hired</h4>
+                  <p class="text-sm text-gray-500">Seamless onboarding into your new dream career.</p>
+           </div>
     </div>
   </div>
 </section>
 
-    <footer class="bg-[#F8FAFC] py-16 text-center">
+    <section class="bg-[#F8FAFC] py-16 text-center">
       <h2 class="text-2xl font-bold mb-6">Ready to join us?</h2>
       
       <button class="bg-[#1440b8] hover:bg-[#7087bb] text-white px-8 py-3 rounded mr-4 transition-colors">
@@ -160,8 +160,10 @@
       <button class="bg-[#10B981] hover:opacity-90 text-white px-8 py-3 rounded transition-opacity">
         Apply Now
       </button>
-    </footer>
+    </section>
+
   </div>
+  
 </template>
 
 <script setup>

@@ -4,9 +4,13 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
+    modules: ['@nuxt/icon', '@vesp/nuxt-fontawesome'],
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
+  fontFamily: {
+        sans: ['"Public Sans"', 'sans-serif'],
+      },
 });

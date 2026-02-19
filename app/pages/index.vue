@@ -10,8 +10,8 @@
                 <div class="absolute inset-0 bg-white/30"></div>
             </div>
 
-            <div class="relative z-10 flex flex-col items-center">
-                <h1 class="text-[#1440b8] text-5xl font-black mb-4 max-w-2xl leading-tight">
+            <div class="relative   flex flex-col items-center">
+                <h1 class="text-[#1440b8] text-5xl font-black mb-4 mt-30 max-w-2xl leading-tight">
                     Modernizing the Job <br> Search Experience
                 </h1>
                 
@@ -118,8 +118,10 @@
 
                 </div>
 
-            </div>
 
+
+            </div>
+                    
         </section>
 
 

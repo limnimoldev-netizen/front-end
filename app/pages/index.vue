@@ -2,126 +2,103 @@
 <template>
 
    
-        <div class="relative w-full min-h-[500px]  overflow-hidden  items-center justify-center text-center ">
-  
+        <section class="relative w-full min-h-[550px] flex items-center justify-center text-center px-4 overflow-hidden">
+            
             <div class="absolute inset-0">
-               
-                <img src="../assets/our-hr.png" alt="Hero Background" class=" object-cover" />
-                <div class="absolute inset-0 bg-white/30"></div>
+                <img src="../assets/our-hr.png" alt="Hero" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-white/40"></div>
             </div>
 
-            <div class="relative   flex flex-col items-center">
-                <h1 class="text-[#1440b8] text-5xl font-black mb-4 mt-30 max-w-2xl leading-tight">
-                    Modernizing the Job <br> Search Experience
-                </h1>
+            <div class="relative z-10 flex flex-col items-center">
                 
-                <p class="text-[#000001] mb-10 max-w-md mx-auto font-medium">
-                    Search and find your dream job now easier than ever, you can simply browse and find a job if you need it
+                <h1 class="text-[#1440b8] text-5xl md:text-6xl font-black mb-6 leading-tight max-w-3xl">
+                Modernizing the Job <br> Search Experience
+                </h1>
+                <p class="text-slate-900 mb-10 max-w-md mx-auto font-medium">
+                Search and find your dream job easier than ever. Simply browse and find a job if you need it.
                 </p>
-
-                <div class="bg-white p-2 rounded-full shadow-lg flex items-center w-full max-w-xl border border-white">
-                   
-                    <input type="text" placeholder="Search for a Job..." class="flex-1 px-6 outline-none text-sm text-[#000001] bg-transparent"/>
+                
+                <div class="bg-white p-2 rounded-full shadow-2xl flex items-center w-full max-w-xl border border-gray-100">
+                    <input type="text" placeholder="Search for a Job..." class="flex-1 px-6 outline-none text-slate-800 bg-transparent"/>
+                    <button class="bg-[#1440b8] text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition active:scale-95">
+                        Search
+                    </button>
                     
-                    <a href="#">
-                        <button class="bg-[#1440b8] text-white px-8 py-3 rounded-full font-bold hover:bg-[#7087bb] transition">
-                            Search
-                        </button>
-                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 py-16 max-w-6xl mx-auto text-center px-6">
+            
+            <div>
+                <h2 class="text-4xl font-black text-slate-900">91%</h2>
+                <p class="font-bold text-blue-600 mt-1">Skills Aligned</p>
+                <p class="text-gray-400 text-sm mt-2">Trusted data from our top recruitment partners.</p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-black text-slate-900">90%</h2>
+                <p class="font-bold text-blue-600 mt-1">Fast and Efficient</p>
+                <p class="text-gray-400 text-sm mt-2">Trusted data from our top recruitment partners.</p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-black text-slate-900">89%</h2>
+                <p class="font-bold text-blue-600 mt-1">Wide Range</p>
+                <p class="text-gray-400 text-sm mt-2">Trusted data from our top recruitment partners.</p>
+            </div>
+
+        </section>
+
+        
+        <section class="max-w-6xl mx-auto py-10 px-6">
+            
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-black text-[#1440b8]">Popular Categories</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition cursor-pointer group">
+                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition">
+                    <Icon name="mdi:code-tags" class="text-blue-500 text-3xl" />
+                </div>
+                <h3 class="font-bold text-xl text-slate-900">Development</h3>
+                <p class="text-gray-500 text-sm">16 jobs available</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition cursor-pointer group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition">
+                        <Icon name="mdi:bullhorn-outline" class="text-blue-500 text-3xl" />
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900">Marketing</h3>
+                    <p class="text-gray-500 text-sm">8 jobs available</p>
+                
                 </div>
 
-            </div>
-
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto text-center">
-            <div>
-               
-                <h2 class="text-3xl font-black text-[#000001]">91%</h2>
-                <p class="font-bold mt-1">Skills Aligned</p>
-                <p class="text-gray-400 text-sm mt-2">Many job seekers match their skills to the right jobs.</p>
-            </div>
-
-            <div>
-               
-                <h2 class="text-3xl font-black text-[#000001]">90%</h2>
-                <p class="font-bold mt-1">Fast and Efficient</p>
-                <p class="text-gray-400 text-sm mt-2">Company data filtering is quick and efficient.</p>
-            </div>
-
-            <div>
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition cursor-pointer group">
+                    
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition">
+                        <Icon name="mdi:palette-outline" class="text-blue-500 text-3xl" />
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900">Design</h3>
+                    <p class="text-gray-500 text-sm">13 jobs available</p>
                 
-                <h2 class="text-3xl font-black text-[#000001]">89%</h2>
-               
-                <p class="font-bold mt-1">Wide Range</p>
-                <p class="text-gray-400 text-sm mt-2">Top employers interacting with many job seekers.</p>
-            </div>
+                </div>
 
-        </div>
-        <br>
-        <section class="max-w-6xl mx-auto p-6">
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition cursor-pointer group">
+                    
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition">
+                        <Icon name="mdi:account-heart-outline" class="text-blue-500 text-3xl" />
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900">Service</h3>
+                    <p class="text-gray-500 text-sm">8 jobs available</p>
                 
-            <div class="text-center mb-10">
-                
-                <h2 class="text-3xl font-black text-[#1440b8]">Recommended jobs</h2>
-                <p class="text-gray-400 mt-2">Trusted by thousands of job seekers worldwide.</p>
-                
+                </div>
+
             </div>
             
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-
-                        <Icon name="mdi:code" class=" text-blue-500 text-3xl" />
-                    </div>
-
-                    <h3 class="font-bold text-lg">Development</h3>
-                    <p class="text-gray-600 text-sm">16 jobs</p>
-
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                   
-                     <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-
-                        <Icon name="mdi:dollar" class=" text-blue-500 text-3xl" />
-                    </div>
-
-                    <h3 class="font-bold text-lg">Marketing</h3>
-                    <p class="text-gray-600 text-sm">8 jobs</p>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    
-                     <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                        <Icon name="mdi:dollar" class=" text-blue-500 text-3xl" />
-                    </div>
-
-                    <h3 class="font-bold text-lg">Design</h3>
-                    <p class="text-gray-600 text-sm">13 jobs</p>
-
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    
-                     <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                       
-                        <Icon name="mdi:dollar" class=" text-blue-500 text-3xl" />
-
-                    </div>
-
-                    <h3 class="font-bold text-lg">Service</h3>
-                    <p class="text-gray-600 text-sm">8 jobs</p>
-
-                </div>
-
-
-
-            </div>
-                    
         </section>
 
 
@@ -294,84 +271,57 @@
 
 
         <section class="max-w-6xl mx-auto p-6 my-10">
-            
+        
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-black text-[#1440b8]">What Our Customers Say</h2>
                 <p class="text-gray-400 mt-2">Trusted by thousands of job seekers worldwide.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <div class="bg-blue-50 p-8 rounded-[2rem] border border-blue-100">
-                
+                <div class="bg-blue-50 p-8 rounded-[2rem] border border-blue-100 transition hover:shadow-md">
                     <div class="flex items-center gap-4 mb-4">
-                
+                        <div class="w-[60px] h-[60px] bg-white border rounded-2xl overflow-hidden shadow-sm">
+                            <img src="../assets/pf1.png" alt="User Profile" class="w-full h-full object-cover">
+                        </div>
                         <div>
-
-                            <div class="w-[50px] bg-blue-50 border rounded-xl">
-                                <img src="../assets/pf1.png" alt="">
-
-                            </div>
-
-                            <h4 class="font-bold">Alex Johnson</h4>
-                            <p class="text-xs text-green-600">Product Designer</p>
+                            <h4 class="font-bold text-slate-900">Alex Johnson</h4>
+                            <p class="text-xs text-blue-600 font-bold">Product Designer</p>
                         </div>
                     </div>
-
                     <p class="text-gray-600 text-sm leading-relaxed">
-                        "HireMe made my job search so easy. I found a position at Gojek within a week of signing up! The interface is very friendly."
+                        "HireMe made my job search so easy. I found a position at Gojek within a week of signing up! The interface is very friendly and modern."
                     </p>
-                    
-                     <div class="mt-4 text-yellow-500 text-xs">
-                        
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+                    <div class="mt-4 flex gap-1 text-yellow-500">
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
                     </div>
                 </div>
 
-                <div class="bg-blue-50 p-8 rounded-[2rem] border border-green-100">
+                <div class="bg-blue-50 p-8 rounded-[2rem] border border-blue-100 transition hover:shadow-md">
                     <div class="flex items-center gap-4 mb-4">
-                        
-
-
-                        <div class="w-[50px] bg-blue-50 border rounded-xl">
-                               
-                            <img src="../assets/pf1.png" alt="">
-
+                        <div class="w-[60px] h-[60px] bg-white border rounded-2xl overflow-hidden shadow-sm">
+                            <img src="../assets/pf1.png" alt="User Profile" class="w-full h-full object-cover">
                         </div>
-                       
                         <div>
-                            <h4 class="font-bold">Sarah Williams</h4>
-                            <p class="text-xs text-green-600">UX Researcher</p>
+                            <h4 class="font-bold text-slate-900">Sarah Williams</h4>
+                            <p class="text-xs text-blue-600 font-bold">UX Researcher</p>
                         </div>
-
                     </div>
-                    
                     <p class="text-gray-600 text-sm leading-relaxed">
-                        "I love the Recommended Jobs feature. It actually understands my skills and suggests things I'm interested in."
+                        "I love the Recommended Jobs feature. It actually understands my skills and suggests things I'm actually interested in. Highly recommended!"
                     </p>
-
-                    <div class="mt-4 text-yellow-500 text-xs">
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
-
-                        <Icon name="mdi:star" class=" text-yellow-500 text-2xl" />
+                    <div class="mt-4 flex gap-1 text-yellow-500">
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
+                        <Icon name="mdi:star" class="text-xl" />
                     </div>
-
                 </div>
-
+            
             </div>
 
         </section>

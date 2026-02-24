@@ -85,7 +85,7 @@
                         </button>
                         <div v-if="showLetter2" class="mt-4">
                     
-                            <p class="text-xl w-230 mt-5 font-normal text-gray-500 mt-2 border-b-2 border-gray-300 pb-5" >
+                            <p class="text-xl w-230 mt-5 font-normal text-gray-500 mt-2  pb-5" >
                                 - Health insurance coverage<br>
                                 - Flexible working hours<br>
                                 - Remote work options<br>
@@ -205,9 +205,6 @@ const showLetter = ref(false);
 const toggleLetter = () => {
   showLetter.value = !showLetter.value;
 };
-
-
-
 
 const showLetter2 = ref(false);
 

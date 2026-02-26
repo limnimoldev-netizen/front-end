@@ -1,3 +1,27 @@
+<script setup>
+
+import JobCard from '@/components/JobCard.vue';
+
+const categories = [
+  { name: 'Development',
+   jobs: 16, 
+   icon: 'mdi:code-tags' },
+
+  { name: 'Marketing',
+   jobs: 8, 
+   icon: 'mdi:bullhorn-outline' },
+
+  { name: 'Design', 
+  jobs: 13,
+   icon: 'mdi:palette-outline' },
+
+  { name: 'Service',
+   jobs: 8, 
+   icon: 'mdi:account-heart-outline' }
+   
+]
+
+</script>
 
 <template>
 
@@ -66,56 +90,20 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                
-                
-            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition ">
-                
-                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4  transition">
-                    <Icon name="mdi:code-tags" class="text-blue-500 text-3xl" />
-                </div>
-                <h3 class="font-bold text-xl ">Development</h3>
-                <p class="text-gray-500 text-sm">16 jobs available</p>
             
-            </div>
+            <div v-for="cat in categories" :key="cat.name" class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition">
                 
-            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition ">
-               
-                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4 transition">
-               
-                    <Icon name="mdi:bullhorn-outline" class="text-blue-500 text-3xl" />
+                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4">
+                    <Icon :name="cat.icon" class="text-blue-500 text-3xl" />
                 </div>
-                    <h3 class="font-bold text-xl">Marketing</h3>
-                    <p class="text-gray-500 text-sm">8 jobs available</p>
                 
+                <h3 class="font-bold text-xl">{{ cat.name }}</h3>
+                <p class="text-gray-500 text-sm">{{ cat.jobs }} jobs available</p>
             </div>
-
-            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition ">
+        
+        </div>
                     
-                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4transition">
-                    <Icon name="mdi:palette-outline" class="text-blue-500 text-3xl" />
-
-                </div>
-                   
-                    <h3 class="font-bold text-xl ">Design</h3>
-                    <p class="text-gray-500 text-sm">13 jobs available</p>  
-            </div>
-
-                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:bg-blue-50 transition ">
-                    
-                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4  transition">
-                        
-                        <Icon name="mdi:account-heart-outline" class="text-blue-500 text-3xl" />
-                    </div>
-                   
-                    <h3 class="font-bold text-xl ">Service</h3>
-                    <p class="text-gray-500 text-sm">8 jobs available</p>
-                
-                </div>
-
-            </div>
-            
     </section>
-
 
 
     <section class="max-w-6xl mx-auto py-20 px-6">
@@ -125,106 +113,39 @@
             <p class="text-gray-400 mt-2">Trusted by thousands of job seekers worldwide.</p>
         </div>
       
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <JobCard 
+          company="Twitter" 
+          title="UX Designer" 
+          salary="800" 
+          date="12 Feb 2024" />
         
-            <div class="bg-white rounded-[40px] border border-gray-100 hover:shadow-xl transition-all">
-                
-                <div class="bg-blue-100 p-8 rounded-[40px]">
-                   
-                    <div class="flex justify-between mb-4">
-                        
-                        <span class="  py-1 rounded-lg text-[10px] font-bold">12 Feb 2024</span>
-                        <Icon name="mdi:twitter" class="text-blue-600 text-2xl" />
-                    </div>
-                    
-                    <p class="text-xs font-bold text-blue-800">Twitter</p>
-                    <h3 class="text-xl font-bold mt-1">UX Designer</h3>
-                    
-                    <div class="flex gap-2 mt-4 flex-wrap">
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Full time</span>
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Part time</span>
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Senior level</span>
-                        
-                    </div>
-                
-                </div>
-            
-                <div class="flex justify-between items-center p-4 mt-2">
-                    <p class="font-black text-1xl ">$800/month</p>
-                    <button class="bg-[#1440b8] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-blue-800 transition">Details</button>
-                </div>
-            
-            </div>
-
-            <div class="bg-white rounded-[40px] border border-gray-100 hover:shadow-xl transition-all">
-                
-                <div class="bg-blue-100 p-8 rounded-[40px]">
-                   
-                    <div class="flex justify-between mb-4">
-                        
-                        <span class="  py-1 rounded-lg text-[10px] font-bold">12 Feb 2024</span>
-                        <Icon name="mdi:twitter" class="text-blue-600 text-2xl" />
-                    </div>
-                    
-                    <p class="text-xs font-bold text-blue-800">Twitter</p>
-                    <h3 class="text-xl font-bold mt-1">UX Designer</h3>
-                    
-                    <div class="flex gap-2 mt-4 flex-wrap">
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Full time</span>
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Part time</span>
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Senior level</span>
-                        
-                    </div>
-                
-                </div>
-            
-                <div class="flex justify-between items-center p-4 mt-2">
-                    <p class="font-black text-1xl ">$800/month</p>
-                    <button class="bg-[#1440b8] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-blue-800 transition">Details</button>
-                </div>
-            
-            </div>
-
-            <div class="bg-white rounded-[40px] border border-gray-100 hover:shadow-xl transition-all">
-                
-                <div class="bg-blue-100 p-8 rounded-[40px]">
-                   
-                    <div class="flex justify-between mb-4">
-                        
-                        <span class="  py-1 rounded-lg text-[10px] font-bold">12 Feb 2024</span>
-                        <Icon name="mdi:twitter" class="text-blue-600 text-2xl" />
-                    </div>
-                    
-                    <p class="text-xs font-bold text-blue-800">Twitter</p>
-                    <h3 class="text-xl font-bold mt-1">UX Designer</h3>
-                    
-                    <div class="flex gap-2 mt-4 flex-wrap">
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Full time</span>
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Part time</span>
-                        <span class="bg-blue-200/50 px-2 py-1 rounded text-[10px] font-bold">Senior level</span>
-                        
-                    </div>
-                
-                </div>
-            
-                <div class="flex justify-between items-center p-4 mt-2">
-                    <p class="font-black text-1xl ">$800/month</p>
-                    <button class="bg-[#1440b8] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-blue-800 transition">Details</button>
-                </div>
-            
-            </div>
-
+          <JobCard 
+          company="Facebook" 
+          title="Product Manager" 
+          salary="1200" 
+          date="15 Feb 2024" />
+        
+          <JobCard 
+          company="Google" 
+          title="Frontend Developer" 
+          salary="1500" 
+          date="20 Feb 2024" />
+      
         </div>
-        
-        <!-- <div class="text-center mb-10">
-            <a href="/list-job">
-                
-                <button class="bg-blue-600  w-40 text-center text-white px-9 py-4 mt-5 rounded-full font-bold hover:bg-[#7087bb] transition">View More</button>      
-            </a>
-        </div> -->
-        
-    </section>
 
+      <div class="flex justify-center">
+       
+        <router-link to="/list-job">
+          
+            <button class="bg-[#1440b8] text-white px-9 py-4 rounded-full font-bold hover:bg-blue-700 transition">View More</button>
+        
+        </router-link>
+      
+    </div>
+
+    </section>
+ 
     <section class="max-w-6xl mx-auto p-6 my-10">
 
         <div class="text-center mb-10">
@@ -410,7 +331,7 @@
                     </div>
                         
                     <div>  
-                        <h4 class="font-black text-lg leading-tight mb-2">Top 5 LinkedIn Tips for Job <br> Seekers</h4>
+                        <h4 class="font-black text-lg leading-tight mb-2">Top 5 LinkedIn Tips for Job </h4>
                                   
                     </div>
                     

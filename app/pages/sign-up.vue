@@ -126,8 +126,10 @@
 <script setup>
 import { ref } from "vue"
 import { useRouter } from "vue-router"
+import axios from "axios"
 
 const router = useRouter()
+
 const name = ref("")
 const email = ref("")
 const password = ref("")
@@ -147,27 +149,29 @@ async function handleSignup() {
   success.value = false
 
   try {
-    const { data, error } = await supabase.auth.signUp({
-      email: email.value,
-      password: password.value,
-      options: {
-        data: {
-          full_name: name.value,
-        },
-      },
-    })
+    const response = await axios.post(
+      "http://localhost:1337/api/auth/local/register",
+      {
+        username: name.value,   
+        email: email.value,
+        password: password.value,
+      }
+    )
 
-    if (error) throw error
+    
+    localStorage.setItem("token", response.data.jwt)
 
     success.value = true
-    message.value = "Account created! Redirecting to login..."
-    
+    message.value = "Account created! Redirecting..."
+
     setTimeout(() => {
       router.push("/login")
-    }, 2000)
+    }, 1500)
 
   } catch (error) {
-    message.value = error.message || "An error occurred during registration."
+    message.value =
+      error.response?.data?.error?.message ||
+      "Registration failed."
     success.value = false
   } finally {
     isLoading.value = false

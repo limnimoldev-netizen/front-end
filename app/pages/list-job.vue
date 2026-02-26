@@ -1,3 +1,25 @@
+<script setup > 
+
+    import axios from 'axios';
+    
+    const config = {
+    headers: { 
+        Authorization: `Bearer 4ac75ec38933e2d77e099be89655d536cfee0c0c424c336d2a27cd6a596c0ae7e0aad5f7f112db8d2a92085d688f50dffe2666f7b37a7b20222b9594b6a58414ee0cc9edb5b34f9c5ffe16349966ee9dc97caaaa591623d143a93dec0f910959e49f566895c888a008f5c1d08711be436686edf2bfc166db04cbd7380273fbb9`
+
+     }
+}
+
+    const dataFetch = await axios.get('http://localhost:1337/api/job-listings', config);
+    const jobListingsDatas = dataFetch.data.data;
+
+    console.log(jobListingsDatas);
+
+</script> 
+
+
+
+
+
 <template>
   <div class=" min-h-screen font-sans antialiased text-[#000001]">
     

@@ -91,42 +91,30 @@ Access your HR dashboard to manage employee records, attendance, and performance
 <script setup>
 import { ref } from "vue"
 import { useRouter } from "vue-router"
+import axios from "axios"
 
 const router = useRouter()
 
 const email = ref("")
 const password = ref("")
 const message = ref("")
-const success = ref(false)
-const isLoading = ref(false)
 
 async function handleLogin() {
-  isLoading.value = true
-  message.value = ""
-  success.value = false
-
   try {
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email: email.value,
-      password: password.value,
-    })
+    const res = await axios.post(
+      "http://localhost:1337/api/auth/local",
+      {
+        identifier: email.value,
+        password: password.value
+      }
+    )
 
-    if (error) throw error
+    localStorage.setItem("token", res.data.jwt)
 
-    store.commit('loggedIn') 
-    
-    success.value = true
-    message.value = "Access Granted. Syncing Dashboard..."
+    router.push("/dashboard")
 
-    setTimeout(() => {
-      router.push("/dashboard")
-    }, 1200)
-
-  } catch (error) {
-    message.value = error.message || "Invalid email or security key."
-    success.value = false
-  } finally {
-    isLoading.value = false
+  } catch (err) {
+    message.value = "Login failed. Check email or password."
   }
 }
 </script>

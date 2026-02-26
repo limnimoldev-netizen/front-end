@@ -25,16 +25,7 @@
                   <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
                 </a>
                
-                <a href="#" class="relative text-xl group">
-
-                <a href="#" class="relative text-xl group">
-                  Jobs Alert
-                  <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#" class="relative text-xl group">
-                  Recommended Jobs
-                  <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                
                 <a href="/company" class="relative text-xl group">
 
                   All Companies

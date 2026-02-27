@@ -103,6 +103,10 @@ import { ref } from "vue"
 import { useRouter } from "vue-router"
 import axios from "axios"
 
+definePageMeta({
+  layout: "auth"
+})
+
 const router = useRouter()
 
 const email = ref("")
@@ -127,6 +131,8 @@ async function handleLogin() {
     message.value = "Login failed. Check email or password."
   }
 }
+
+
 </script>
 
 <style scoped>

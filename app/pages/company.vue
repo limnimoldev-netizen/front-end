@@ -3,11 +3,11 @@ import { ref, computed } from 'vue';
 
 const allCompanies = ref([
   {
-    name: 'ABA BANK',
+    name: 'Chip Mong',
     industry: 'Information Technology',
-    logo: 'https://i.ibb.co/7JRfpS4m/aba-1.jpg',
-    bannerImage: 'https://careers.ababank.com/job-posting/ABA-basic-banking-new_24.jpg',
-    profileUrl: 'https://www.ababank.com/app/?gad_source=1&gad_campaignid=793541930&gbraid=0AAAAADh3gSPvwFldMg_w8ECAsGSWUQT20&gclid=Cj0KCQiA49XMBhDRARIsAOOKJHZHPGnYnJg6beORQdaHR2Sg98ssPWZ0dlgfYByq_s2POuLwWx3xj7UaAtTGEALw_wcB'
+    logo: 'https://www.chipmongbank.com/fb-og-image.jpg',
+    bannerImage: 'https://www.chipmong.com/wp-content/uploads/2020/04/1.Chip-Mong-Mall.jpg',
+    profileUrl: 'http://localhost:3000/view-profile'
   },
 
   {

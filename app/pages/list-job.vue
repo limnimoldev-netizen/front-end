@@ -1,26 +1,29 @@
-<script setup > 
 
+
+<script setup > 
+    import { ref, onMounted } from 'vue'
     import axios from 'axios';
     
     const config = {
     headers: { 
-        Authorization: `Bearer 4ac75ec38933e2d77e099be89655d536cfee0c0c424c336d2a27cd6a596c0ae7e0aad5f7f112db8d2a92085d688f50dffe2666f7b37a7b20222b9594b6a58414ee0cc9edb5b34f9c5ffe16349966ee9dc97caaaa591623d143a93dec0f910959e49f566895c888a008f5c1d08711be436686edf2bfc166db04cbd7380273fbb9`
+        Authorization: `Bearer 680fae22ce69cb0aefb6fef54f567f5b8b9476ec93b69271e95880891419f24bdbb83ee224b07e39c953bc059e825a5945e7ee047d3247d564e7db147f3bc6e2f27ca71a7d4e266e14c18ba60d94748b577f4939081213eed4577323dc934643a9a566e8f1b5519f92130c52932db9ca28de0551a5245825237ce7023574b66c`
 
      }
-}
+};
 
-    const dataFetch = await axios.get('http://localhost:1337/api/job-listings', config);
+    const dataFetch = await axios.get('http://localhost:1337/api/listing-jobs', config);
     const jobListingsDatas = dataFetch.data.data;
 
     console.log(jobListingsDatas);
 
-</script> 
-
-
+</script>
 
 
 
 <template>
+    
+
+
   <div class=" min-h-screen font-sans antialiased text-[#000001]">
     
     <div class="bg-[#a7b6d7] border-b border-gray-100 pt-20 pb-24">

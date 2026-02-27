@@ -38,17 +38,17 @@
 <div class="w-11 h-11 flex items-center justify-center transition-all duration-300">
             <i class="fa-solid fa-arrow-left"></i>
           </div>
-          <span class="text-l font-extrabold tracking-tighter text-slate-900  ">Back</span>
+          <span class="text-l font-extrabold tracking-tighter text-slate-7  ">Back</span>
         </router-link>
 
         <div class="mb-8">
-          <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Create Account</h1>
-          <p class="text-slate-500 mt-2 text-sm font-medium">Access your workspace. Manage your success.</p>
+          <h1 class="text-4xl text-slate-900 tracking-tight">Create Account</h1>
+          <p class="text-slate-500 mt-2 text-sm">Access your workspace. Manage your success.</p>
         </div>
 
         <form @submit.prevent="handleSignup" class="space-y-5">
           <div>
-            <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Full Name</label>
+            <label class="block text-[10px] tracking-[0.1em] text-slate-400 mb-2 ml-1">Full Name</label>
             <input
               v-model="name"
               type="text"
@@ -59,7 +59,7 @@
           </div>
 
           <div>
-            <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Email Node</label>
+            <label class="block text-[10px] tracking-[0.1em] text-slate-400 mb-2 ml-1">Email</label>
             <input
               v-model="email"
               type="email"
@@ -70,7 +70,7 @@
           </div>
 
           <div>
-            <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Create Security Key</label>
+            <label class="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">PAssworD</label>
             <input
               v-model="password"
               type="password"
@@ -80,8 +80,10 @@
             />
           </div>
 
+
+
           <div>
-            <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Verify Key</label>
+            <label class="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Verify password</label>
             <input
               v-model="confirm"
               type="password"
@@ -92,12 +94,15 @@
             />
           </div>
 
+
+
+
           <button
             type="submit"
             :disabled="isLoading || (confirm && password !== confirm)"
-            class="w-full mt-4 bg-[#1440b8] text-white font-bold uppercase text-[12px] tracking-[0.2em] py-5 rounded-2xl hover:bg-[#7087bb] transition-all duration-300 active:scale-[0.97] disabled:opacity-50 flex items-center justify-center gap-3 shadow-2xl shadow-indigo-900/10"
+            class="w-full mt-4 bg-[#1440b8] text-whith uppercase text-[12px] tracking-[0.2em] py-5 rounded-2xl hover:bg-[#7087bb] transition-all duration-300 active:scale-[0.97] disabled:opacity-50 flex items-center justify-center gap-3 shadow-2xl shadow-indigo-900/10"
           >
-            <span v-if="!isLoading">Register Node</span>
+            <span v-if="!isLoading">Register</span>
             <span v-else>Syncing to Database...</span>
             <i v-if="isLoading" class="fa-solid fa-circle-notch animate-spin text-indigo-300"></i>
           </button>
@@ -109,10 +114,13 @@
           </div>
         </Transition>
 
+
+
+
         <div class="mt-10 pt-8 border-t border-slate-100 text-center">
-          <p class="text-slate-400 text-xs font-medium">
+          <p class="text-slate-400 text-xs">
             Already registered? 
-            <router-link to="/login" class="text-[#1440b8] hover:text-[#7087bb] font-bold transition-colors ml-1">Login</router-link>
+            <router-link to="/login" class="text-[#1440b8] hover:text-[#7087bb] transition-colors ml-1">Login</router-link>
           </p>
         </div>
       </div>
@@ -125,7 +133,7 @@
 
 <script setup>
 import { ref } from "vue"
-import { useRouter } from "vue-router"
+
 import axios from "axios"
 
 const router = useRouter()

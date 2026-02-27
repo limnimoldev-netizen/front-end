@@ -2,6 +2,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <div class="min-h-screen flex font-['Plus_Jakarta_Sans',sans-serif] selection:bg-indigo-500/30">
     
+
+
+
     <main class="w-full lg:w-[45%] flex flex-col justify-center px-8 md:px-16 lg:px-20 bg-white relative z-10">
       <div class="max-w-[380px] w-full mx-auto">
         <router-link to="/" class="inline-flex items-center gap-3 mb-12 group">
@@ -11,12 +14,12 @@
           <span class="text-l font-extrabold tracking-tighter text-slate-900  ">Back</span>
         </router-link>
         <div class="mb-10">
-          <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Sign in</h1>
-          <p class="text-slate-500 mt-2 text-sm font-medium">Welcome back. Enter your node credentials.</p>
+          <h1 class="text-4xl text-slate-900 tracking-tight">Log In</h1>
+          <p class="text-slate-500 mt-2 text-sm font-medium"> attendance, and performance in real time.</p>
         </div>
         <form @submit.prevent="handleLogin" class="space-y-6">
           <div>
-            <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Email Node</label>
+            <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Email</label>
             <input
               v-model="email"
               type="email"
@@ -25,11 +28,18 @@
               required
             />
           </div>
+
+
+
+
           <div>
             <div class="flex justify-between items-center mb-2 ml-1">
-               <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Security Key</label>
-               <a href="#" class="text-[10px] font-bold uppercase text-slate-400 hover:text-indigo-600 transition-colors">Forgot?</a>
+               <label class="text-[10px]  uppercase tracking-[0.2em] text-slate-400">Security Password</label>
+               <a href="#" class="text-[10px]  uppercase text-slate-400 hover:text-indigo-600 transition-colors">Forgot?</a>
             </div>
+
+
+
             <input
               v-model="password"
               type="password"
@@ -46,7 +56,7 @@
 
 
             >
-            <span v-if="!isLoading">Authenticate</span>
+            <span v-if="!isLoading">Log In</span>
             <span v-else>Verifying Access...</span>
             <i v-if="isLoading" class="fa-solid fa-circle-notch animate-spin text-indigo-300"></i>
           </button>
@@ -60,7 +70,7 @@
 
         <div class="mt-12 pt-8 border-t border-slate-100 text-center">
           <p class="text-slate-400 text-xs font-medium">
-            New to the network? 
+            Make a day now?
             <router-link to="/sign-up" class="text-indigo-600 hover:text-indigo-700 font-bold transition-colors ml-1">Create account</router-link>
           </p>
         </div>
@@ -81,7 +91,7 @@
           Connect <br/> to the <span class="text-indigo-400 ]">Future</span>
         </h2>
         <p class="text-slate-400 max-w-sm text-sm font-medium leading-relaxed">
-Access your HR dashboard to manage employee records, attendance, and performance in real time.        </p>
+         Access your HR dashboard to manage employee records, attendance, and performance in real time.</p>
       </div>
     </div>
 
@@ -111,7 +121,7 @@ async function handleLogin() {
 
     localStorage.setItem("token", res.data.jwt)
 
-    router.push("/dashboard")
+    router.push("/")
 
   } catch (err) {
     message.value = "Login failed. Check email or password."

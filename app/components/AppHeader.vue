@@ -16,7 +16,7 @@
          </div>
          <div class="flex items-center justify-center w-full p-4 pt-0 pb-0">
              <nav class="flex space-x-10 pb-1 ">
-                <a href="#" class="relative text-xl group">
+                <a href="/" class="relative text-xl group">
                   Home
                   <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
                 </a>

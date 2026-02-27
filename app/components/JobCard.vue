@@ -33,8 +33,12 @@ const props = defineProps({
     <div class="flex justify-between items-center p-4 mt-2">
       
         <p class="font-black text-lg">${{ salary }}/month</p>
-      
-        <button class="bg-[#1440b8] text-white px-8 py-3 rounded-full font-bold text-sm">Details</button>
+        
+        <a href="/jobdetailpage">
+        
+          <button class="bg-[#1440b8] text-white px-8 py-3 rounded-full font-bold text-sm">Details</button>
+
+        </a>
     </div>
   
   </div>

@@ -51,7 +51,7 @@
                     <input type="text" placeholder="Location" class="w-full py-4 outline-none text-base bg-transparent" />
                 </div>
                 
-                <a href="#">  
+                <a href="/jobdetailpage">  
 
                     <button class="bg-[#1440b8] hover:bg-[#7087bb] text-white px-12 py-4 rounded-2xl lg:rounded-full font-bold text-lg transition-all active:scale-95 shadow-lg shadow-blue-900/20">
                     Search</button>
@@ -96,7 +96,7 @@
 
                 </div>
 
-                <a href="#" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
+                <a href="/jobdetailpage" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
                     Apply Now
                 </a>
                 
@@ -126,7 +126,7 @@
 
                 </div>
 
-                <a href="#" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
+                <a href="/jobdetailpage" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
                     Apply Now
                 </a>
                 
@@ -156,7 +156,7 @@
 
                 </div>
 
-                <a href="#" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
+                <a href="/jobdetailpage" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
                     Apply Now
                 </a>
                 
@@ -188,7 +188,7 @@
 
                 </div>
 
-                <a href="#" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
+                <a href="/jobdetailpage" class="block w-full py-3 bg-[#1440b8] hover:bg-[#7087bb] text-white text-center font-bold rounded-2xl transition">
                     Apply Now
                 </a>
                 
